@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <title>{% block title %} {% endblock %}</title>
+    {% include 'includes/head_links.html' %}
+</head>
+
+<body id="home" >
+
+{% include 'includes/header.html' %}
+
+{% block main %}
+{% endblock %}
+
+{% include 'includes/footer.html' %}
+
+<div id="to-top" class="to-top"><i class="fa fa-angle-up"></i></div>
+
+{% include 'includes/footer_links.html' %}
+
+</body>
+</html>
