@@ -23,10 +23,10 @@
                     <div class="d-flex align-items-center justify-content-center justify-content-md-end">
                         <div class="lng_dropdown">
                             <select name="countries" class="custome_select">
-                                <option value='en' data-image="assets/images/eng.png" data-title="English">English
+                                <option value='en' data-image="{% static 'images/eng.png' %}" data-title="English">English
                                 </option>
-                                <option value='fn' data-image="assets/images/fn.png" data-title="France">France</option>
-                                <option value='us' data-image="assets/images/us.png" data-title="United States">United
+                                <option value='fn' data-image="{% static 'images/fn.png' %}" data-title="France">France</option>
+                                <option value='us' data-image="{% static 'images/us.png' %}" data-title="United States">United
                                     States
                                 </option>
                             </select>
@@ -46,9 +46,9 @@
     <div class="middle-header dark_skin">
         <div class="container">
             <div class="nav_block">
-                <a class="navbar-brand" href="index.html">
-                    <img class="logo_light" src="assets/images/logo_light.png" alt="logo">
-                    <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo">
+                <a class="navbar-brand" href="{% url 'home:home' %}">
+                    <img class="logo_light" src="{% static 'images/logo_light.png' %}" alt="logo">
+                    <img class="logo_dark" src="{% static 'images/logo_dark.png' %}" alt="logo">
                 </a>
                 <div class="product_search_form radius_input search_form_btn">
                     <form>
@@ -547,7 +547,7 @@
                                                 <div class="header-banner">
                                                     <div class="sale-banner">
                                                         <a class="hover_effect1" href="#">
-                                                            <img src="assets/images/shop_banner_img7.jpg"
+                                                            <img src="{% static 'images/shop_banner_img7.jpg' %}"
                                                                  alt="shop_banner_img7">
                                                         </a>
                                                     </div>
@@ -557,7 +557,7 @@
                                                 <div class="header-banner">
                                                     <div class="sale-banner">
                                                         <a class="hover_effect1" href="#">
-                                                            <img src="assets/images/shop_banner_img8.jpg"
+                                                            <img src="{% static 'images/shop_banner_img8.jpg' %}"
                                                                  alt="shop_banner_img8">
                                                         </a>
                                                     </div>
